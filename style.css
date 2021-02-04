@@ -1,0 +1,225 @@
+*{
+    margin: 0;padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    text-align: center;
+    line-height: 45px;
+    color: tomato;
+    font-family: cursive;
+    font-weight: 700;
+}
+.overley {
+    background: #9bd4b487;
+    width: 100%;
+    height: 100vh;
+}
+.left-top-font {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 50px;
+}
+
+.left-bottom-font {
+    position: absolute;
+    left: 0%;
+    padding: 50px;
+    bottom: 0%;
+}
+
+.right-top-font {
+    top: 0%;
+    padding: 50px;
+    right: 0%;
+    position: absolute;
+}
+
+.right-Botoom-font {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    padding: 50px;
+}
+.overley .sec-title {
+    border-bottom: none;
+}
+.title h1 {
+    font-size: 35px;
+}
+
+.title h3 {
+    font-size: 25px;
+    color: #292021;
+}
+#secound{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    
+}
+.sec-title {
+    padding: 20px;
+    font-size: 25px;
+    color: tomato;
+    text-decoration: underline;
+    border-bottom: dashed 2px #000;
+}
+.hover-box{
+    width: 19%;
+    height: 200px;
+    background: green;
+    margin:5px;
+    float: left;
+}
+.sec-body p{
+    width: 19%;
+    height: 200px;
+    background: green;
+    margin:5px;
+    float: left;
+}
+.sec-body {
+    overflow: hidden;
+    padding: 20px;
+}
+.hover-box:nth-child(2) {
+    background: #eaafaf;
+}
+.hover-box:nth-child(3) {
+    background: #020101;
+}
+.hover-box:nth-child(4) {
+    background: #d71d1d;
+}
+.hover-box:nth-child(5) {
+    background: #390b0b;
+}
+.hover-box:hover + .a{
+    background: red;
+    border-radius: 50%;
+    transition: .5s;
+}
+.hover-box:hover + .a + .b{
+    background: rgb(47, 0, 255);
+    border-radius: 50%;
+    transition: .7s;
+}
+.hover-box:hover + .a + .b + .c{
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    transition: .7s;
+}
+.hover-box:hover + .a + .b + .c + .d{
+    background: rgb(212, 122, 5);
+    border-radius: 50%;
+    transition: .7s;
+}
+.hover-box h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 40%;
+}
+.overflow{
+    width: 30%;
+    height: 350px;
+    border: solid 2px #000;
+    margin: 10px;
+    float: left;
+    overflow: hidden;
+}
+.overflow:nth-child(2) {
+    overflow: visible;
+}
+.overflow:nth-child(3) {
+    overflow: scroll;
+}
+input.name {
+    width: 42%;
+    font-size: 15px;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+}
+
+input.name1 {
+    width: 90%;
+    padding: 20px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+form.focas-form textarea {
+    width: 90%;
+    padding: 20px;
+    margin: 10px;
+}
+
+input.submit {
+    padding: 16px 100px;
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+    background: #000;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 5px;
+    border: navajowhite;
+}
+.name:focus{
+    outline: none;
+    border:dashed 2px #000;
+    font-size:25px;
+    transition: .9s;
+}
+.name::placeholder{
+    color:tomato;
+}
+.name1:focus{
+    outline: none;
+    border:dotted 2px #000;
+    font-size:25px;
+    transition: .9s;
+}
+.name1::placeholder{
+    color:#00bcc5;
+}
+form.focas-form textarea:focus{
+    outline-style:none;
+}
+form.focas-form textarea::placeholder{
+    font-size: 25px;
+    color: tomato;
+}
+.flag {
+    width: 385px;
+    margin: auto;
+    position: relative;
+    height: 200px;
+    background: green;
+}	
+	
+	.flag1 {
+    position: absolute;
+    left: 50%;
+    width: 130px;
+    top: 50%;
+    height: 130px;
+    border-radius: 50%;
+    background: red;
+    transform: translate(-50%,-50%);
+}
+.after {padding-top: 20px;}
+
+.after:after {content: 'After Content';color: red;font-weight: bolder;}
+
+.after:before {content: 'Before Content';color: tomato;}
